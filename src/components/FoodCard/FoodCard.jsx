@@ -20,7 +20,7 @@ const location=useLocation();
     if (user && user.email) {
        const cartItem={menuItemId: _id,name,image,price,email:user.email}
 
-      fetch("http://localhost:5000/carts",{
+      fetch("https://bistro-boss-server-shahadoth-ali.vercel.app/carts",{
         method:'POST',
         headers:{
           'content-type':'application/json'
